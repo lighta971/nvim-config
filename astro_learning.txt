@@ -1,0 +1,36 @@
+-- Search
+Search a file
+Search in all files
+Search inside the current file
+
+-- Window
+Toggle Terminal F7
+Move through panes	Ctrl + hjkl
+
+-- File manipulation
+Remove a file
+Create a file
+Move a file*****
+
+-- Motion
+Delete a line
+Move through word
+
+
+-- Goto
+List symbols of current file (preview broken, no need preview)
+Goto Reference Leader + l + R (no preview)
+
+
+Questions
+Goto definition ?
+Goto references ?
+Goto local symbols
+
+
+-- Clean
+Terminal: supprimer les mapping inutile du menu
+plugin: todo-comment
+plugin: change panel keymap
+menu: remove S session management
+keymap: add GOTO Declaration, Goto References, Goto Definition
