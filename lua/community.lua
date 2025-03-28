@@ -9,5 +9,6 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
   -- import/override with your plugins folder
 }

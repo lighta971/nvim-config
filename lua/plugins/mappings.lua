@@ -5,12 +5,15 @@ return {
     opts = {
       mappings = {
         n = {
-          ["<Leader>fw"] = {
-            function() require("snacks").picker.grep {} end,
-            desc = "Grep word in all files",
-          },
-          -- fix because it does not work
-          ["C-Up"] = { function() require("smart-splits").move_cursor_up() end, desc = "Move to above split" },
+          -- Move one line up and down
+          ["<C-S-Up>"] = { ":m .-2<CR>==", desc = "Move text block up" },
+          ["<C-S-Down>"] = { ":m .+1<CR>==", desc = "Move text block down" },
+          ["grs"] = { function() require("snacks").picker.lsp_symbols() end, desc = "Search local symbols" },
+        },
+        v = {
+          -- Move one line up and down
+          ["<C-S-Up>"] = { ":m .-2<CR>==", desc = "Move text block up" },
+          ["<C-S-Down>"] = { ":m .+1<CR>==", desc = "Move text block down" },
         },
       },
     },
